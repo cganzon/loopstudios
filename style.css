@@ -17,6 +17,8 @@
 
 html, body {
     font-size: 15px;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
 }
 
 img {
@@ -45,6 +47,7 @@ a {
     left: 50%;
     transform: translateX(-50%);
     width: 88%;
+    color: var(--white);
 }
 
 .navbar {
@@ -66,8 +69,31 @@ a {
     top: 10rem;
 }
 
+.nav-link,
+.hero-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
 .nav-link {
     color: var(--white);
+}
+
+.hero-text-container {
+    padding-top: 10.8rem;
+}
+
+.hero-text {
+    border: 2px solid var(--white);
+    font-size: 2.65rem;
+    line-height: 0.98;
+    padding: 1.65rem 1.5rem 1.15rem 1.6rem;
+}
+
+.burger-icon,
+.close-icon {
+    cursor: pointer;
 }
 
 .hide {
