@@ -176,15 +176,14 @@ a {
 
     .nav-link:hover::after,
     .nav-link:focus::after {
-        text-decoration: none;
         content: '';
-        width: 45%;
-        height: 2px;
-        background-color: var(--white);
         position: absolute;
         top: 2rem;
         left: 50%;
         transform: translateX(-50%);
+        width: 45%;
+        height: 2px;
+        background-color: var(--white);
     }
 
     .hero-text {
@@ -197,5 +196,21 @@ a {
 @media (min-width: 1201px) {
     .nav-links {
         width: 34.2%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+    
+    .hero-img-desktop {
+        height: auto;
+    }
+
+    .navbar,
+    .hero-text-container {
+        max-width: 1540px;
     }
 }
