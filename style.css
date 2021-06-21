@@ -19,6 +19,7 @@ html, body {
     font-size: 15px;
     font-family: 'Alata', sans-serif;
     font-weight: 400;
+    position: relative;
 }
 
 img {
@@ -41,21 +42,28 @@ a {
     display: none;
 }
 
-.hero-content {
+.navbar {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 88%;
     color: var(--white);
-}
-
-.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     padding-top: 2.65rem;
+    z-index: 1;
+}
+
+.nav-background {
+    background-color: var(--black);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -66,7 +74,7 @@ a {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 10rem;
+    top: 14.75rem;
 }
 
 .nav-link,
@@ -74,19 +82,28 @@ a {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
+    padding-bottom: 1.6rem;
 }
 
 .nav-link {
     color: var(--white);
+    font-size: 1.6rem;
 }
 
 .hero-text-container {
-    padding-top: 10.8rem;
+    width: 88%;
+    position: absolute;
+    top: 15.05rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hero-text {
+    max-width: 25rem;
     border: 2px solid var(--white);
-    font-size: 2.65rem;
+    color: var(--white);
+    /* font-size: 2.65rem; */
+    font-size: clamp(1.8rem, -0.7053rem + 13.4211vw, 2.65rem);
     line-height: 0.98;
     padding: 1.65rem 1.5rem 1.15rem 1.6rem;
 }
@@ -107,6 +124,54 @@ a {
 
     .hero-img-desktop {
         display: block;
+    }
+
+    .burger-icon,
+    .close-icon,
+    .nav-background {
+        display: none;
+    }
+
+    .navbar,
+    .hero-text-container {
+        width: 77%;
+    }
+
+    .navbar {
+        padding-top: 4.2rem;
+    }
+
+    .logo {
+        width: 12.7rem;
+    }
+
+    .nav-links {
+        display: block;
+        position: static;
+        width: 55%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-link {
+        padding-bottom: 0;
+        text-transform: none;
+        font-family: 'Alata', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .hero-text {
+        max-width: 650px;
+        font-size: 4.8rem;
+        padding: 2.55rem 2.6rem 1.75rem 2.55rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    .nav-links {
+        width: 34.2%;
     }
 }
 
