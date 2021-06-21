@@ -120,6 +120,11 @@ a {
     cursor: pointer;
 }
 
+/* Utility classes */
+.fixed {
+    position: fixed;
+}
+
 .hide {
     display: none;
 }
@@ -204,7 +209,7 @@ a {
         max-width: 2000px;
         margin: 0 auto;
     }
-    
+
     .hero-img-desktop {
         height: auto;
     }
