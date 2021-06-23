@@ -63,7 +63,7 @@ a {
 .nav-background {
     background-color: var(--black);
     width: 100vw;
-    height: 100vh;
+    height: 667px;
     position: absolute;
     top: 0;
     left: 0;
@@ -125,9 +125,9 @@ a {
 }
 
 /* Utility classes */
-.fixed {
+/* .fixed {
     position: fixed;
-}
+} */
 
 .hide {
     display: none;

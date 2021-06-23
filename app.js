@@ -7,17 +7,17 @@ let navBackground = document.querySelector('.nav-background');
 burgerIcon.addEventListener('click', () => {
     closeIcon.classList.toggle('hide');
     burgerIcon.classList.toggle('hide');
-    navBar.classList.toggle('fixed');
+    // navBar.classList.toggle('fixed');
     navLinks.classList.toggle('hide');
     navBackground.classList.toggle('hide');
-    navBackground.classList.toggle('fixed');
+    // navBackground.classList.toggle('fixed');
 });
 
 closeIcon.addEventListener('click', () => {
     closeIcon.classList.toggle('hide');
     burgerIcon.classList.toggle('hide');
-    navBar.classList.toggle('fixed');
+    // navBar.classList.toggle('fixed');
     navLinks.classList.toggle('hide');
     navBackground.classList.toggle('hide');
-    navBackground.classList.toggle('fixed');
+    // navBackground.classList.toggle('fixed');
 });
