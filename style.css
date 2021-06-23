@@ -86,7 +86,7 @@ a {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    padding-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
 }
 
 .nav-link {
@@ -317,6 +317,12 @@ a {
     padding: 0.65rem 2.5rem;
     margin-top: 0.75rem;
     margin-bottom: 6.3rem;
+    transition: background-color 0.15s ease;
+}
+
+.see-all-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
 }
 
   /* ////// */
@@ -341,16 +347,19 @@ a {
 
 .footer-link {
     color: var(--white);
-    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .social-links {
     padding-top: 1.95rem;
     padding-bottom: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-link {
-    padding: 0 0.4rem;
+    margin: 0 0.4rem;
 }
 
 .copyright {
