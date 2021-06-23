@@ -19,6 +19,7 @@ html, body {
     font-size: 15px;
     font-family: 'Alata', sans-serif;
     font-weight: 400;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -27,10 +28,13 @@ img {
 }
 
 a {
-    text-decoration: none;;
+    text-decoration: none;
+    display: inline-block;
 }
 
-/* Hero section */
+  /* //////////// */
+ /* Hero section */
+/* //////////// */
 .hero-img-mobile,
 .hero-img-desktop {
     width: 100%;
@@ -219,3 +223,99 @@ a {
         max-width: 1540px;
     }
 }
+
+.main-content {
+    width: 88%;
+    margin: 0 auto;
+}
+
+  /* /////////////////// */
+ /* Interactive section */
+/* /////////////////// */
+.interactive {
+    padding: 6.45rem 0;
+}
+
+.interactive-img-mobile,
+.interactive-img-desktop {
+    width: 100%;
+}
+
+.interactive-img-desktop {
+    display: none;
+}
+
+.interactive-info {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.interactive-title {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.15rem;
+    font-weight: 300;
+    color: var(--black);
+    padding-top: 3.2rem;
+}
+
+.interactive-paragraph {
+    color: var(--dark-gray);
+    line-height: 1.7;
+    padding-top: 1.1rem;
+}
+
+  /* ///////////////// */
+ /* Creations section */
+/* ///////////////// */
+.creations {
+    text-align: center;
+}
+
+.creations-title {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.15rem;
+    font-weight: 300;
+    color: var(--black);
+    padding-bottom: 3rem;
+}
+
+.creation-img {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.creation-img-mobile,
+.creation-img-desktop {
+    width: 100%;
+}
+
+.creation-img-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.65rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: start;
+    color: var(--white);
+    width: 9ch;
+    position: absolute;
+    left: 1.4rem;
+    bottom: 1.35rem;
+}
+
+.the-grid .creation-img-title {
+    width: 7ch;
+}
+
+.see-all-btn {
+    text-transform: uppercase;
+    color: var(--black);
+    letter-spacing: 0.3rem;
+    border: 0.13rem solid var(--black);
+    padding: 0.65rem 2.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 6.5rem;
+}
+
