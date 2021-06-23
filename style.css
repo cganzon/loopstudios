@@ -261,7 +261,7 @@ a {
 }
 
 .interactive-paragraph {
-    color: var(--dark-gray);
+    color: var(--very-dark-gray);
     line-height: 1.7;
     padding-top: 1.1rem;
 }
@@ -316,6 +316,44 @@ a {
     border: 0.13rem solid var(--black);
     padding: 0.65rem 2.5rem;
     margin-top: 0.75rem;
-    margin-bottom: 6.5rem;
+    margin-bottom: 6.3rem;
 }
 
+  /* ////// */
+ /* Footer */
+/* ////// */
+.footer {
+    background-color: var(--black);
+    text-align: center;
+}
+
+.footer-logo {
+    width: 9.7rem;
+    margin: 0 auto;
+    padding-top: 3.8rem;
+    padding-bottom: 2.2rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link {
+    color: var(--white);
+    padding-bottom: 1.25rem;
+}
+
+.social-links {
+    padding-top: 1.95rem;
+    padding-bottom: 0.9rem;
+}
+
+.social-link {
+    padding: 0 0.4rem;
+}
+
+.copyright {
+    color: var(--dark-gray);
+    padding-bottom: 3.8rem;
+}
