@@ -179,7 +179,7 @@ a {
     }
 
     .nav-link {
-        padding-bottom: 0;
+        margin-bottom: 0;
         text-transform: none;
         font-family: 'Alata', sans-serif;
         font-weight: 400;
