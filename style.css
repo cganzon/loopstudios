@@ -325,7 +325,7 @@ a {
 
     .interactive-info {
         max-width: 36.2rem;
-        padding-left: 6.4rem;
+        padding-left: 6.2rem;
         text-align: left;
         background-color: var(--white);
         position: absolute;
@@ -335,7 +335,7 @@ a {
 
     .interactive-title {
         font-size: 3.2rem;
-        padding-top: 6.4rem;
+        padding-top: 6.2rem;
     }
 }
 
