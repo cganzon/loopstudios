@@ -397,6 +397,7 @@ a {
     font-weight: 300;
     text-transform: uppercase;
     text-align: start;
+    line-height: 1;
     color: var(--white);
     width: 9ch;
     position: absolute;
