@@ -329,7 +329,8 @@ a {
         text-align: left;
         background-color: var(--white);
         position: absolute;
-        top: 23.3rem;
+        top: 23rem;
+        padding-bottom: 1rem;
     }
 
     .interactive-title {
