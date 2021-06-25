@@ -234,7 +234,6 @@ a {
 
 .main-content {
     width: 88%;
-    max-width: 32rem;
     margin: 0 auto;
 }
 
@@ -330,7 +329,6 @@ a {
         text-align: left;
         background-color: var(--white);
         position: absolute;
-        right: 0;
         top: 23.3rem;
     }
 
@@ -361,9 +359,34 @@ a {
     margin-bottom: 1.5rem;
 }
 
+.creation-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 100%, 0) 60%);
+}
+
+.creation-img:hover > .creation-img-title {
+    color: var(--black);
+}
+
+.creation-img:hover::after {
+    background: var(--white);
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
 .creation-img-mobile,
 .creation-img-desktop {
     width: 100%;
+}
+
+.creation-img-desktop,
+.btn-desktop {
+    display: none;
 }
 
 .creation-img-title {
@@ -377,6 +400,7 @@ a {
     position: absolute;
     left: 1.4rem;
     bottom: 1.35rem;
+    z-index: 1;
 }
 
 .the-grid .creation-img-title {
@@ -397,6 +421,91 @@ a {
 .see-all-btn:hover {
     background-color: var(--black);
     color: var(--white);
+}
+
+@media (min-width: 769px) {
+    .creations {
+        padding-top: 1.7rem;
+    }
+
+    .creations-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .btn-mobile {
+        display: none;
+    }
+
+    .creations-title {
+        font-size: 2.6rem;
+        padding-bottom: 5.3rem;
+    }
+
+    .creation-img-mobile {
+        display: none;
+    }
+
+    .creation-img-desktop,
+    .btn-desktop {
+        display: block;
+    }
+
+    .btn-desktop {
+        margin: 0;
+    }
+
+    .creations-imgs {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .creation-img-title {
+        left: 0.8rem;
+        bottom: 0.6rem;
+        font-size: 1.5rem;
+    }
+
+    .creation-img {
+        margin-bottom: 0;
+    }
+
+    .creation-img::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 100%, 0) 50%);
+    }
+}
+
+@media (min-width: 1201px) {
+    .creations-title {
+        font-size: 3.2rem;
+    }
+
+    .creations-imgs {
+        gap: 2rem;
+    }
+
+    .creation-img-title {
+        font-size: 1.8rem;
+        left: 2.65rem;
+        bottom: 2.1rem;
+    }
+}
+
+@media (min-width: 1360px) {
+    .creation-img-title {
+        font-size: 2.12rem;
+        left: 2.65rem;
+        bottom: 2.1rem;
+    }
 }
 
   /* ////// */
